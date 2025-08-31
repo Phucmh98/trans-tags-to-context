@@ -32,11 +32,7 @@ export default function InputTag() {
   function onSubmit(data: z.infer<typeof FormSchema>) {
     setTag(data.bio);
     toast("Bạn đã nhập tag", {
-      description: (
-        <pre className="mt-2 w-[320px] rounded-md bg-neutral-950 p-4">
-          <code className="text-white">{data.bio}</code>
-        </pre>
-      ),
+      description: <span className="text-gray-600">Đã nhập thẻ</span>,
     });
   }
 
@@ -60,14 +56,17 @@ export default function InputTag() {
                 />
               </FormControl>
               <FormDescription>
-                Liên hệ <span>&quot;mhphuc.98@gmail.com&quot;</span> để hướng dẫn sử dụng.
+                Liên hệ <span>&quot;mhphuc.98@gmail.com&quot;</span> để hướng
+                dẫn sử dụng.
               </FormDescription>
               <FormMessage />
             </FormItem>
           )}
         />
         <div className="flex justify-end">
-          <Button type="submit" className="bg-green-500 hover:bg-green-600">Ok</Button>
+          <Button type="submit" className="bg-green-500 hover:bg-green-600">
+            Ok
+          </Button>
         </div>
       </form>
     </Form>
