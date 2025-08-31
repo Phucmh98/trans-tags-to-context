@@ -60,7 +60,7 @@ export default function InputTag() {
                 />
               </FormControl>
               <FormDescription>
-                Liên hệ <span>"mhphuc.98@gmail.com"</span> để hướng dẫn sử dụng.
+                Liên hệ <span>&quot;mhphuc.98@gmail.com&quot;</span> để hướng dẫn sử dụng.
               </FormDescription>
               <FormMessage />
             </FormItem>
